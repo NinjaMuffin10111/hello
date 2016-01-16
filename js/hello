@@ -1,0 +1,29 @@
+#!/usr/bin/env node
+
+'use strict'
+
+var c = require('skilstak-colors');
+
+function printPlain() {
+  console.log("Hello world");
+}
+
+var printRed = function () {
+  while (true){
+    console.log(c.red + "Badum badum badum" + c.x);
+  }
+}
+
+var printMulti = function () {
+  console.log(c.multi("Banana?"));
+}
+
+var printColors = function () {
+  console.log(c.y + "Do you want a" + c.x);
+}
+
+//printMulti();
+printRed();
+//printColors();
+
+
